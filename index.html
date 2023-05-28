@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="utf-8" />
     <title>Studio</title>
@@ -27,7 +27,7 @@
                 ><p class="head-logo"><span class="webname">Web</span>Studio</p>
               </a>
             </li>
-            <li><a href="#example" class="submenu">Agencja</a></li>
+            <li><a href="index.html" class="submenu">Agencja</a></li>
             <li><a href="portfolio.html" class="submenu">Portfolio</a></li>
             <li><a href="#contact" class="submenu">Kontakt</a></li>
           </menu>
@@ -61,7 +61,11 @@
           Efektowne rozwiazania <br />
           dla waszego biznesu
         </h1>
-        <button type="button" class="mainbtn">Zamów usługę</button>
+        <button type="button" class="mainbtn" data-modal-open>Zamów usługę</button>
+        <div class="modal is-hidden" data-modal>
+          <button class="close-btn" type="button" data-modal-close>x
+          </button>
+        </div>
       </div>
       <div class="body-style">
         <div class="upper-body section">
@@ -127,24 +131,33 @@
           <section class="img-bg">
             <h2 class="head-text">Czym się zajmujemy</h2>
             <div class="images">
-              <img
+              <div class="img-label">
+                <img
                 src="images/work1.jpg"
                 alt="Kodowanie"
                 width="370"
                 height="294"
-                class="img-padding" />
+                 />
+                <p class="label">Aplikacje Komputerowe</p>
+              </div>
+              <div class="img-label">
               <img
                 src="images/work2.jpg"
                 alt="Debugowanie aplikacji"
                 width="370"
                 height="294"
-                class="img-padding" />
+               />
+               <p class="label">Aplikacje Mobilne</p>
+              </div>
+              <div class="img-label">
               <img
                 src="images/work3.jpg"
                 alt="Projektowanie stylów"
                 width="370"
                 height="294"
-                class="img-padding" />
+              />
+              <p class="label">Rozwiązania Graficzne</p>
+              </div>
             </div>
           </section>
         </div>
@@ -441,5 +454,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

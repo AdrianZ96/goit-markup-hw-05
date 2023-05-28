@@ -164,6 +164,27 @@ a {
   padding: 10px 41px;
   margin-bottom: 200px;
 }
+.is-hidden{
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+.modal{
+  width: 528px;
+  height: 581px;
+  position: fixed;
+  background-color: #fff;
+  visibility: visible;
+  display: block;
+  margin: 222px 536px;
+  z-index: 3;
+  box-shadow:0 0 0 1600px rgba(0, 0, 0, 0.2);
+}
+.close-btn{
+  margin: 8px 8px 543px 490px;
+  border: none;
+  border-radius: 50%;
+}
 .pagenav {
   list-style: none;
   display: flex;
@@ -308,6 +329,27 @@ cursor: pointer;
 }
 .img-bg {
   padding-top: 93px;
+}
+.img-label{
+  position: relative;
+  width: 370px;
+  height: 294px;
+}
+.img-label > .label{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 26px 90px;
+  margin: 0;
+  
+  font-weight: 700;
+  text-align: center;
+  font-size: var(--mainfont-size);
+  color: var(--darkbd-fontcolor);
+  background-color: rgba(47, 48, 58, 0.8);
+  text-transform: uppercase;
+  cursor: pointer;
 }
 .about {
   display: flex;
