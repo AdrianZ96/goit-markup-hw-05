@@ -234,8 +234,8 @@ a {
 }
 .close-btn {
   position: absolute;
-  width: 16px;
-  height: 16px;
+  display: flex;
+  justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   margin: 8px 8px 543px 490px;
